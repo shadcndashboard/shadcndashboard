@@ -1,6 +1,7 @@
 "use client"
 import { Rocket } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import Link from 'next/link';
 
 export function NavSecondary() {
     return (
@@ -28,9 +29,9 @@ export function NavSecondary() {
                     </p>
                 </div>
                 {/* Upgrade button */}
-                <Button className="w-full cursor-pointer h-9 bg-foreground text-background hover:bg-foreground/90 rounded-lg text-sm font-medium">
+                <Link href={"https://shadcn-dashboard-com.vercel.app/#pricing-section"} target='_blank' className="w-full cursor-pointer h-9 flex items-center justify-center bg-foreground text-background hover:bg-foreground/90 rounded-lg text-sm font-medium">
                     Upgrade
-                </Button>
+                </Link>
             </div>
         </div>
     )

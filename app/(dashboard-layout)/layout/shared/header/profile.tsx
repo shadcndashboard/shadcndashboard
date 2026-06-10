@@ -131,7 +131,7 @@ export default function ProfileSheet() {
                 variant="secondary"
                 className="text-primary"
               >
-                <Link href={"/auth/auth1/login"}> Log Out</Link>
+                <Link href={"/auth/auth2/login"}> Log Out</Link>
               </Button>
             </div>
           </div>

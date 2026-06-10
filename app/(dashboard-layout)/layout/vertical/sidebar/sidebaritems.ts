@@ -71,7 +71,9 @@ import {
   ShoppingBag,
   List,
   Users,
-  Package
+  Package,
+  ChartBar,
+  ShoppingCart
 } from "lucide-react"
 
 const SidebarContent: MenuItem[] = [
@@ -491,7 +493,93 @@ const SidebarContent: MenuItem[] = [
     ],
   },
 
+  {
+    heading: "Home",
+    items: [
+      {
+        id: uniqueId(),
+        name: "Analytics",
+        icon: ChartBar,
+        url: "https://shadcndashboard-pro.vercel.app/",
+        external: true,
+        isPro: true
+      },
+      {
+        id: uniqueId(),
+        name: "eCommerce",
+        icon: ShoppingCart,
+        url: "https://shadcndashboard-pro.vercel.app/dashboards/ecommerce",
+        external: true,
+        isPro: true
+      },
+      {
+        id: uniqueId(),
+        name: "SaaS + AI Dashboard",
+        icon: Sparkles,
+        url: "https://shadcndashboard-pro.vercel.app/dashboards/saas-ai",
+        external: true,
+        isPro: true
+      },
 
+      {
+        name: "Front Pages",
+        id: uniqueId(),
+        icon: FileText,
+        items: [
+          {
+            id: uniqueId(),
+            name: "Homepage",
+            url: "https://shadcndashboard-pro.vercel.app/frontend-pages/homepage",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "About Us",
+            url: "https://shadcndashboard-pro.vercel.app/frontend-pages/about",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "Blog",
+            url: "https://shadcndashboard-pro.vercel.app/frontend-pages/blog/post",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "Blog Details",
+            url: "https://shadcndashboard-pro.vercel.app/frontend-pages/blog/detail/as-yen-tumbles-gadget-loving-japan-goes-for-secondhand-iphones-",
+            external: true,
+            isPro: true
+          },
+
+          {
+            id: uniqueId(),
+            name: "Portfolio",
+            url: "https://shadcndashboard-pro.vercel.app/frontend-pages/portfolio",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "Pricing",
+            url: "https://shadcndashboard-pro.vercel.app/frontend-pages/pricing",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "Contact Us",
+            url: "https://shadcndashboard-pro.vercel.app/frontend-pages/contact",
+            external: true,
+            isPro: true
+          },
+        ],
+      },
+    ],
+  },
 
   {
     heading: "Apps",
@@ -708,14 +796,14 @@ const SidebarContent: MenuItem[] = [
             name: "Basic Table",
             id: uniqueId(),
             url: "https://shadcndashboard-pro.vercel.app/shadcn-tables/basic",
-            external:true,
+            external: true,
             isPro: true
           },
           {
             name: "Striped Row Table",
             id: uniqueId(),
             url: "https://shadcndashboard-pro.vercel.app/shadcn-tables/striped-row",
-            external:true,
+            external: true,
             isPro: true
           },
           {

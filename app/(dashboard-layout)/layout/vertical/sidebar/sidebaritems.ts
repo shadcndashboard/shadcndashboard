@@ -60,7 +60,20 @@ import {
   UserPlus, Smile, House, NotebookText, Component,
   Table2,
   Form,
-  CircleUserRound
+  CircleUserRound,
+  Sparkles,
+  Calendar,
+  MessageCircle,
+  Mail,
+  Contact,
+  Receipt,
+  UserCircle,
+  ShoppingBag,
+  List,
+  Users,
+  Package,
+  ChartBar,
+  ShoppingCart
 } from "lucide-react"
 
 const SidebarContent: MenuItem[] = [
@@ -410,6 +423,368 @@ const SidebarContent: MenuItem[] = [
     ],
   },
   {
+    heading: "Icons",
+    items: [
+      {
+        id: uniqueId(),
+        name: "Iconify Icons",
+        icon: Smile,
+        url: "/icons/iconify",
+      },
+    ],
+  },
+  {
+    heading: "Auth",
+    items: [
+      {
+        id: uniqueId(),
+        name: "Error",
+        icon: Unlink,
+        url: "/auth/error",
+      },
+      {
+        name: "Login",
+        id: uniqueId(),
+        icon: LogIn,
+        items: [
+          {
+            id: uniqueId(),
+            name: "Boxed Login",
+            url: "/auth/auth2/login",
+          },
+        ],
+      },
+      {
+        name: "Register",
+        id: uniqueId(),
+        icon: UserPlus,
+        items: [
+          {
+            id: uniqueId(),
+            name: "Boxed Register",
+            url: "/auth/auth2/register",
+          },
+        ],
+      },
+      {
+        name: "Forgot Password",
+        id: uniqueId(),
+        icon: Lock,
+        items: [
+          {
+            id: uniqueId(),
+            name: "Boxed Forgot Pwd",
+            url: "/auth/auth2/forgot-password",
+          },
+        ],
+      },
+      {
+        name: "Two Steps",
+        id: uniqueId(),
+        icon: ShieldCheck,
+        items: [
+          {
+            id: uniqueId(),
+            name: "Boxed Two Steps",
+            url: "/auth/auth2/two-steps",
+          },
+        ],
+      }
+    ],
+  },
+
+  {
+    heading: "Home",
+    items: [
+      {
+        id: uniqueId(),
+        name: "Analytics",
+        icon: ChartBar,
+        url: "https://shadcndashboard-pro.vercel.app/",
+        external: true,
+        isPro: true
+      },
+      {
+        id: uniqueId(),
+        name: "eCommerce",
+        icon: ShoppingCart,
+        url: "https://shadcndashboard-pro.vercel.app/dashboards/ecommerce",
+        external: true,
+        isPro: true
+      },
+      {
+        id: uniqueId(),
+        name: "SaaS + AI Dashboard",
+        icon: Sparkles,
+        url: "https://shadcndashboard-pro.vercel.app/dashboards/saas-ai",
+        external: true,
+        isPro: true
+      },
+
+      {
+        name: "Front Pages",
+        id: uniqueId(),
+        icon: FileText,
+        items: [
+          {
+            id: uniqueId(),
+            name: "Homepage",
+            url: "https://shadcndashboard-pro.vercel.app/frontend-pages/homepage",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "About Us",
+            url: "https://shadcndashboard-pro.vercel.app/frontend-pages/about",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "Blog",
+            url: "https://shadcndashboard-pro.vercel.app/frontend-pages/blog/post",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "Blog Details",
+            url: "https://shadcndashboard-pro.vercel.app/frontend-pages/blog/detail/as-yen-tumbles-gadget-loving-japan-goes-for-secondhand-iphones-",
+            external: true,
+            isPro: true
+          },
+
+          {
+            id: uniqueId(),
+            name: "Portfolio",
+            url: "https://shadcndashboard-pro.vercel.app/frontend-pages/portfolio",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "Pricing",
+            url: "https://shadcndashboard-pro.vercel.app/frontend-pages/pricing",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "Contact Us",
+            url: "https://shadcndashboard-pro.vercel.app/frontend-pages/contact",
+            external: true,
+            isPro: true
+          },
+        ],
+      },
+    ],
+  },
+
+  {
+    heading: "Apps",
+    items: [
+      {
+        name: "AI",
+        icon: Sparkles,
+        id: uniqueId(),
+        items: [
+          {
+            id: uniqueId(),
+            name: "Chat",
+            url: "https://shadcndashboard-pro.vercel.app/apps/chat-ai",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "Image ",
+            url: "https://shadcndashboard-pro.vercel.app/apps/image-ai",
+            external: true,
+            isPro: true
+          },
+        ],
+      },
+      {
+        id: uniqueId(),
+        name: "Calendar",
+        icon: Calendar,
+        url: "https://shadcndashboard-pro.vercel.app/apps/calendar",
+        external: true,
+        isPro: true
+      },
+
+      {
+        id: uniqueId(),
+        name: "Chats",
+        icon: MessageCircle,
+        url: "https://shadcndashboard-pro.vercel.app/apps/chats",
+        external: true,
+        isPro: true
+      },
+
+      {
+        id: uniqueId(),
+        name: "Email",
+        icon: Mail,
+        url: "https://shadcndashboard-pro.vercel.app/apps/email",
+        external: true,
+        isPro: true
+      },
+      {
+        id: uniqueId(),
+        name: "Contacts",
+        icon: Contact,
+        url: "https://shadcndashboard-pro.vercel.app/apps/contacts",
+        external: true,
+        isPro: true
+      },
+      {
+        name: "Invoice",
+        id: uniqueId(),
+        icon: Receipt,
+        items: [
+          {
+            id: uniqueId(),
+            name: "List",
+            url: "https://shadcndashboard-pro.vercel.app/apps/invoice/list",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "Details",
+            url: "https://shadcndashboard-pro.vercel.app/apps/invoice/detail/PineappleInc",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "Create",
+            url: "https://shadcndashboard-pro.vercel.app/apps/invoice/create",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "Edit",
+            url: "https://shadcndashboard-pro.vercel.app/apps/invoice/edit/PineappleInc",
+            external: true,
+            isPro: true
+          },
+        ],
+      },
+      {
+        name: "User Profile",
+        id: uniqueId(),
+        icon: UserCircle,
+        items: [
+          {
+            id: uniqueId(),
+            name: "Profile",
+            url: "https://shadcndashboard-pro.vercel.app/apps/user-profile/profile",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "Followers",
+            url: "https://shadcndashboard-pro.vercel.app/apps/user-profile/followers",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "Friends",
+            url: "https://shadcndashboard-pro.vercel.app/apps/user-profile/friends",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "Gallery",
+            url: "https://shadcndashboard-pro.vercel.app/apps/user-profile/gallery",
+            external: true,
+            isPro: true
+          },
+        ],
+      },
+      {
+        name: "Ecommerce",
+        id: uniqueId(),
+        icon: ShoppingBag,
+        items: [
+          {
+            id: uniqueId(),
+            name: "Shop",
+            url: "https://shadcndashboard-pro.vercel.app/apps/ecommerce/shop",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "Details",
+            url: "https://shadcndashboard-pro.vercel.app/apps/ecommerce/detail/3",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "List",
+            url: "https://shadcndashboard-pro.vercel.app/apps/ecommerce/list",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "Checkout",
+            url: "https://shadcndashboard-pro.vercel.app/apps/ecommerce/checkout",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "Add Product",
+            url: "https://shadcndashboard-pro.vercel.app/apps/ecommerce/addproduct",
+            external: true,
+            isPro: true
+          },
+          {
+            id: uniqueId(),
+            name: "Edit Product",
+            url: "https://shadcndashboard-pro.vercel.app/apps/ecommerce/editproduct",
+            external: true,
+            isPro: true
+          },
+        ],
+      },
+      {
+        id: uniqueId(),
+        name: "Kanban",
+        icon: List,
+        url: "https://shadcndashboard-pro.vercel.app/apps/kanban",
+        external: true,
+        isPro: true
+      },
+      {
+        id: uniqueId(),
+        icon: Users,
+        name: "Customers",
+        url: "https://shadcndashboard-pro.vercel.app/react-tables/user-datatable",
+        external: true,
+        isPro: true
+      },
+      {
+        id: uniqueId(),
+        icon: Package,
+        name: "Orders",
+        url: "https://shadcndashboard-pro.vercel.app/react-tables/order-datatable",
+        external: true,
+        isPro: true
+      },
+    ],
+  },
+  {
     heading: "TABLES",
     items: [
       {
@@ -421,14 +796,14 @@ const SidebarContent: MenuItem[] = [
             name: "Basic Table",
             id: uniqueId(),
             url: "https://shadcndashboard-pro.vercel.app/shadcn-tables/basic",
-            external:true,
+            external: true,
             isPro: true
           },
           {
             name: "Striped Row Table",
             id: uniqueId(),
             url: "https://shadcndashboard-pro.vercel.app/shadcn-tables/striped-row",
-            external:true,
+            external: true,
             isPro: true
           },
           {
@@ -745,25 +1120,8 @@ const SidebarContent: MenuItem[] = [
 
   },
   {
-    heading: "Icons",
-    items: [
-      {
-        id: uniqueId(),
-        name: "Iconify Icons",
-        icon: Smile,
-        url: "/icons/iconify",
-      },
-    ],
-  },
-  {
     heading: "Auth",
     items: [
-      {
-        id: uniqueId(),
-        name: "Error",
-        icon: Unlink,
-        url: "/auth/error",
-      },
       {
         name: "Login",
         id: uniqueId(),
@@ -775,11 +1133,6 @@ const SidebarContent: MenuItem[] = [
             url: "https://shadcndashboard-pro.vercel.app/auth/auth1/login",
             external: true,
             isPro: true
-          },
-          {
-            id: uniqueId(),
-            name: "Boxed Login",
-            url: "/auth/auth2/login",
           },
         ],
       },
@@ -794,12 +1147,7 @@ const SidebarContent: MenuItem[] = [
             url: "https://shadcndashboard-pro.vercel.app/auth/auth1/register",
             external: true,
             isPro: true
-          },
-          {
-            id: uniqueId(),
-            name: "Boxed Register",
-            url: "/auth/auth2/register",
-          },
+          }
         ],
       },
       {
@@ -813,12 +1161,7 @@ const SidebarContent: MenuItem[] = [
             url: "https://shadcndashboard-pro.vercel.app/auth/auth1/forgot-password",
             external: true,
             isPro: true
-          },
-          {
-            id: uniqueId(),
-            name: "Boxed Forgot Pwd",
-            url: "/auth/auth2/forgot-password",
-          },
+          }
         ],
       },
       {
@@ -832,12 +1175,7 @@ const SidebarContent: MenuItem[] = [
             url: "https://shadcndashboard-pro.vercel.app/auth/auth1/two-steps",
             external: true,
             isPro: true
-          },
-          {
-            id: uniqueId(),
-            name: "Boxed Two Steps",
-            url: "/auth/auth2/two-steps",
-          },
+          }
         ],
       },
       {

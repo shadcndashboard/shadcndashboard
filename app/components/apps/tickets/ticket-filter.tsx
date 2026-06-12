@@ -55,7 +55,7 @@ const TicketFilter = () => {
       <div className="grid grid-cols-12 gap-6">
         <div className="lg:col-span-3 md:col-span-6  col-span-12">
           <div
-            className="p-8 bg-primary/5 border  border-primary text-center rounded-lg cursor-pointer"
+            className="p-8 bg-primary/5 border  border-primary/20 text-center rounded-lg cursor-pointer"
             onClick={() => setFilter("total_tickets")}
           >
             <h3 className="text-2xl">{tickets.length}</h3>
@@ -64,7 +64,7 @@ const TicketFilter = () => {
         </div>
         <div className="lg:col-span-3 md:col-span-6  col-span-12">
           <div
-            className="p-8 bg-chart-4/12 border border-chart-4 text-center rounded-lg cursor-pointer"
+            className="p-8 bg-chart-4/12 border border-chart-4/20 text-center rounded-lg cursor-pointer"
             onClick={() => setFilter("Pending")}
           >
             <h3 className=" text-2xl">{pendingC}</h3>
@@ -73,7 +73,7 @@ const TicketFilter = () => {
         </div>
         <div className="lg:col-span-3 md:col-span-6  col-span-12">
           <div
-            className="p-8 bg-chart-2/12 border border-chart-2 text-center rounded-lg cursor-pointer"
+            className="p-8 bg-chart-2/12 border border-chart-2/20 text-center rounded-lg cursor-pointer"
             onClick={() => setFilter("Open")}
           >
             <h3 className=" text-2xl">{openC}</h3>
@@ -82,7 +82,7 @@ const TicketFilter = () => {
         </div>
         <div className="lg:col-span-3 md:col-span-6  col-span-12">
           <div
-            className="p-8 bg-destructive/12 border border-destructive text-center rounded-lg cursor-pointer"
+            className="p-8 bg-destructive/12 border border-destructive/20 text-center rounded-lg cursor-pointer"
             onClick={() => setFilter("Closed")}
           >
             <h3 className="text-2xl">{closeC}</h3>

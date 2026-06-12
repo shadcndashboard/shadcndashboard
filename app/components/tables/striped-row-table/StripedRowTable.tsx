@@ -43,7 +43,7 @@ function StripedRowTable() {
     <Card>
       <CardHeader>
         <CardTitle>
-          <h3 className='text-xl font-semibold'>Striped-Row Table</h3>
+          Striped-Row Table
         </CardTitle>
       </CardHeader>
       <CardContent>
@@ -105,7 +105,7 @@ function StripedRowTable() {
                       {/* Priority */}
                       <TableCell>
                         <Badge
-                          className={`text-sm rounded-full py-1 px-3 justify-center ${item.bgcolor}`}>
+                          className={`text-sm rounded-full py-1 px-3 justify-center bg-${item.statuscolor}/10! text-${item.statuscolor}!`}>
                           {item.priority}
                         </Badge>
                       </TableCell>

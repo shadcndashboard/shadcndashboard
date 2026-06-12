@@ -2,7 +2,6 @@ import { useRouter } from "next/navigation";
 import { useContext, useState } from "react";
 import { CircleAlert, Trash } from 'lucide-react';
 import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
 import {
   Table,
   TableBody,
@@ -86,14 +85,14 @@ const TicketListing = () => {
 
   const ticketBadge = (ticket: TicketType) => {
     return ticket.Status === "Open"
-      ? "bg-chart-2/12 text-chart-2 "
+      ? "bg-chart-2/12! text-chart-2!"
       : ticket.Status === "Closed"
-        ? "bg-destructive/12 text-destructive"
+        ? "bg-destructive/12! text-destructive!"
         : ticket.Status === "Pending"
-          ? "bg-chart-4/12 text-chart-4 "
+          ? "bg-chart-4/12! text-chart-4! "
           : ticket.Status === "Moderate"
-            ? "bg-primary/5 text-primary "
-            : "bg-primary/5 text-primary ";
+            ? "bg-primary/5! text-primary! "
+            : "bg-primary/5! text-primary! ";
   };
 
   return (
@@ -148,7 +147,7 @@ const TicketListing = () => {
                   <TableHead className="text-sm font-semibold py-3 whitespace-nowrap">
                     Date
                   </TableHead>
-                  <TableHead className="text-sm font-semibold py-3 text-end">
+                  <TableHead className="text-sm font-semibold py-3 ">
                     Action
                   </TableHead>
                 </TableRow>
@@ -193,7 +192,7 @@ const TicketListing = () => {
                         {format(new Date(ticket.Date), "E, MMM d")}
                       </p>
                     </TableCell>
-                    <TableCell className="text-end">
+                    <TableCell>
                       <TooltipProvider>
                         <Tooltip>
                           <TooltipTrigger>

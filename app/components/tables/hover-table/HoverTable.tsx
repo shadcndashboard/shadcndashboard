@@ -43,7 +43,8 @@ function HoverTable() {
     <Card>
       <CardHeader>
         <CardTitle>
-          <h3 className='text-xl font-semibold'>Hover Table</h3></CardTitle>
+          Hover Table
+        </CardTitle>
       </CardHeader>
       <CardContent>
         <div className='flex flex-col border rounded-md border-ld '>
@@ -104,7 +105,7 @@ function HoverTable() {
                         {/* Priority */}
                         <TableCell>
                           <Badge
-                            className={`text-sm rounded-full py-1 px-3 justify-center ${item.bgcolor}`}>
+                            className={`text-sm rounded-full py-1 px-3 justify-center bg-${item.statuscolor}/10! text-${item.statuscolor}!`}>
                             {item.priority}
                           </Badge>
                         </TableCell>

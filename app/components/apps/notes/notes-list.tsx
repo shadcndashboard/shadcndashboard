@@ -59,12 +59,12 @@ const Notelist = () => {
 
 
   const colorClasses: Record<NoteColor, string> = {
-    primary: "bg-primary/5  text-primary border border-primary",
-    destructive: "bg-destructive/5  text-primary border border-destructive",
-    "chart-3": "bg-chart-3/5  text-primary  border border-chart-3",
-    "chart-4": "bg-chart-4/5 text-primary border border-chart-4",
-    "chart-2": "bg-chart-2/5 text-primary  border border-chart-2",
-    secondary: "bg-secondary/5 text-primary  border border-secondary",
+    primary: "bg-primary/5  text-primary border border-primary/20",
+    destructive: "bg-destructive/5  text-primary border border-destructive/20",
+    "chart-3": "bg-chart-3/5  text-primary  border border-chart-3/20",
+    "chart-4": "bg-chart-4/5 text-primary border border-chart-4/20",
+    "chart-2": "bg-chart-2/5 text-primary  border border-chart-2/20",
+    secondary: "bg-secondary/5 text-primary  border border-secondary/20",
   };
 
   return (

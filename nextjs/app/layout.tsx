@@ -16,6 +16,22 @@ const geist = Geist({
 export const metadata: Metadata = {
   title: "ShadcnDashboard - Tailwind + Shadcn Nextjs",
   description: "Modern admin dashboard built with Next.js, Tailwind, and Shadcn.",
+   openGraph: {
+    title: "ShadcnDashboard - Tailwind + Shadcn Nextjs",
+    description: "Modern admin dashboard built with Next.js, Tailwind, and Shadcn.",
+    images: [
+      {
+        url: "/OG-Image.png",
+        width: 1200,
+        height: 630,
+        alt: "ShadcnDashboard Preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/OG-Image.png"],
+  },
 };
 
 export default function RootLayout({

@@ -42,17 +42,26 @@ import CardBox from '../../shared/CardBox'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 
 const badgeColors = [
-  'bg-blue-100 text-blue-700',
-  'bg-green-100 text-green-700',
-  'bg-yellow-100 text-yellow-700',
-  'bg-purple-100 text-purple-700',
-  'bg-pink-100 text-pink-700',
-  'bg-indigo-100 text-indigo-700',
-  'bg-teal-100 text-teal-700',
-  'bg-orange-100 text-orange-700',
+  'bg-chart-1/10! text-chart-1!',
+  'bg-chart-2/10! text-chart-2!',
+  'bg-chart-3/10! text-chart-3!',
+  'bg-chart-4/10! text-chart-4!',
+  'bg-chart-5/10! text-chart-5!',
+  'bg-destructive/10! text-destructive!',
+  'bg-primary/10! text-primary!',
 ]
 
 export function getColorForValue(value: string) {
+  const lower = value.toLowerCase()
+  if (lower === 'active') return 'bg-chart-2/10! text-chart-2!'
+  if (lower === 'inactive') return 'bg-destructive/10! text-destructive!'
+  if (lower === 'high') return 'bg-destructive/10! text-destructive!'
+  if (lower === 'medium') return 'bg-chart-4/10! text-chart-4!'
+  if (lower === 'low') return 'bg-chart-2/10! text-chart-2!'
+  if (lower === 'manager') return 'bg-chart-1/10! text-chart-1!'
+  if (lower === 'senior') return 'bg-chart-3/10! text-chart-3!'
+  if (lower === 'lead') return 'bg-primary/10! text-primary!'
+  if (lower === 'junior') return 'bg-chart-5/10! text-chart-5!'
   const index =
     Math.abs(
       value.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0)
@@ -158,11 +167,11 @@ const DataTable = <T extends Record<string, unknown>>({
 
         if (typeof value === 'boolean') {
           return value ? (
-            <Badge className='px-2 py-1 rounded-full text-xs font-semibold bg-red-100 text-red-700'>
+            <Badge className='px-2 py-1 rounded-full text-xs font-semibold bg-destructive/10! text-destructive!'>
               Inactive
             </Badge>
           ) : (
-            <Badge className='px-2 py-1 rounded-full text-xs font-semibold bg-green-100 text-green-700'>
+            <Badge className='px-2 py-1 rounded-full text-xs font-semibold bg-chart-2/10! text-chart-2!'>
               Active
             </Badge>
           )
@@ -401,9 +410,7 @@ const DataTable = <T extends Record<string, unknown>>({
             <CardHeader className='pb-4'>
               <div className='pt-0 flex items-center justify-between flex-wrap gap-4'>
                 <CardTitle>
-                  <h3 className='text-xl font-semibold'>
                     Employee Data Table
-                  </h3>
                 </CardTitle>
                 <div className='flex items-center gap-2 flex-wrap'>
                   <Input

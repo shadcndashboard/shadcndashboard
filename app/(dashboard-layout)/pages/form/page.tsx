@@ -386,7 +386,7 @@ const Page = () => {
           </div>
 
           {/* Switch */}
-          <div className='bg-background md:p-6 p-4'>
+          <div className='bg-background md:p-6 p-4 h-full'>
             <h5 className='card-title'>Toggle Switch</h5>
             <div className='grid grid-cols-2 sm:grid-cols-3 gap-6 mt-6'>
               <div className='flex items-center gap-2'>

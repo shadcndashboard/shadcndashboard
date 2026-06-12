@@ -42,7 +42,7 @@ const BasicTable = () => {
       <Card>
         <CardHeader>
           <CardTitle>
-            <h3 className='text-xl font-semibold'>Basic Table</h3>
+            Basic Table
           </CardTitle>
         </CardHeader>
 
@@ -101,7 +101,7 @@ const BasicTable = () => {
                           {/* Priority */}
                           <TableCell>
                             <Badge
-                              className={`text-sm rounded-full py-1 px-3 justify-center ${item.bgcolor}`}>
+                              className={`text-sm rounded-full py-1 px-3 justify-center bg-${item.statuscolor}/10! text-${item.statuscolor}!`}>
                               {item.priority}
                             </Badge>
                           </TableCell>

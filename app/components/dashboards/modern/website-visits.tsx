@@ -257,7 +257,7 @@ export default function WebsiteVisits() {
         </div>
 
         {/* Chart */}
-        <div className="w-full overflow-x-auto">
+        <div className="w-full sm:overflow-x-auto">
           <div className="min-w-[560px]">
             <ChartContainer config={chartConfig} className="h-[260px]! w-full">
               <BarChart

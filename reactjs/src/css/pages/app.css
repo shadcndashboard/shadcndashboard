@@ -1,0 +1,330 @@
+/* Calendar */
+.rbc-event.event-azure {
+  background-color: var(--color-primary);
+}
+
+.rbc-event.event-primary {
+  background-color: var(--color-primary);
+}
+
+.calendar>.absolute {
+  top: 51% !important;
+}
+
+.calendarSec>.absolute {
+  top: 67% !important;
+}
+
+.rbc-event.event-secondary {
+  background-color: var(--color-secondary);
+}
+
+.rbc-event.event-destructive {
+  background-color: var(--color-destructive);
+}
+
+.rbc-event.event-chart-2 {
+  background-color: var(--color-chart-2);
+}
+
+.rbc-event.event-chart-4 {
+  background-color: var(--color-chart-4);
+}
+
+.rbc-off-range-bg {
+  background: transparent !important;
+}
+
+.rbc-today {
+  background-color: var(--color-muted) !important;
+}
+
+.rbc-month-row+.rbc-month-row,
+.rbc-day-bg+.rbc-day-bg,
+.rbc-header,
+.rbc-month-view,
+.rbc-toolbar button,
+.rbc-time-content>*+*>* {
+  border-color: var(--color-border) !important;
+
+
+
+}
+
+.rbc-month-view {
+  border-radius: 12px;
+
+}
+
+.rbc-header {
+  padding: 10px 3px !important;
+}
+
+.rbc-day-bg+.rbc-day-bg {
+  border-left: 1px solid var(--color-border) !important;
+}
+
+.rbc-event:focus,
+.rbc-day-slot .rbc-background-event:focus {
+  outline: none;
+}
+
+.rbc-toolbar {
+  margin-bottom: 30px !important;
+}
+
+.rbc-toolbar button {
+  border: 0 !important;
+  padding: 10px 15px !important;
+  font-size: 14px;
+  background-color: transparent !important;
+  color: var(--color-muted-foreground) !important;
+}
+
+.rbc-toolbar button:focus {
+  color: var(--color-primary) !important;
+}
+
+.rbc-toolbar button:hover {
+  color: var(--color-primary) !important;
+}
+
+.rbc-toolbar button:is(:hover, :active, .rbc-active) {
+  background-color: var(--color-primary) !important;
+  color: white !important;
+  box-shadow: none !important;
+  border-radius: 0;
+
+  /* no need for px if zero */
+}
+
+.dark .rbc-toolbar button:is(:hover, :active, .rbc-active) {
+  color: black !important;
+}
+
+.rbc-month-row {
+  min-height: 120px !important;
+}
+
+.rbc-btn-group {
+  border-radius: 12px !important;
+  overflow: hidden;
+  border: 1px solid var(--color-border) !important;
+}
+
+.rbc-btn-group button+button {
+  border-left: 1px solid var(--color-border) !important;
+}
+
+.btn-primary {
+  background-color: #2b2b2b;
+}
+
+.btn-secondary {
+  background-color: oklch(92.619% 0.17657 128.9);
+}
+
+@media (max-width: 767px) {
+  .rbc-btn-group {
+    width: auto;
+    margin-bottom: 15px;
+
+  }
+
+  .rbc-toolbar .rbc-toolbar-label {
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  .rbc-calendar {
+    height: 100vh !important;
+  }
+}
+
+.rbc-calendar {
+  min-height: 800px;
+}
+
+.email-content p {
+  margin: 12px 0;
+}
+
+.product-thumb .slick-current img {
+  border: 2px solid var(--color-primary) !important;
+}
+
+.product-thumb .slick-slide img {
+  border: 2px solid transparent;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #2b2b2b;
+}
+
+.slick-next {
+  right: 15px;
+}
+
+.slick-prev {
+  left: 15px;
+  z-index: 1;
+}
+
+.ql-container {
+  min-height: 200px;
+  border-radius: 0 0 9px 9px;
+  font-family: inherit !important;
+}
+
+.ql-toolbar.ql-snow {
+  border-radius: 9px 9px 0 0;
+  border: 1px solid var(--color-border) !important;
+  font-family: inherit !important;
+}
+
+.ql-toolbar.ql-snow+.ql-container.ql-snow {
+  border-top: 0 !important;
+}
+
+.darkbg .ql-container.ql-snow,
+.darkbg .ql-toolbar.ql-snow,
+.darkbg .ql-snow .ql-tooltip input[type="text"] {
+  border-color: var(--color-border) !important;
+
+}
+
+.darkbg .ql-snow .ql-picker:not(.ql-color-picker):not(.ql-icon-picker) svg,
+.darkbg .ql-snow.ql-toolbar button svg,
+.ql-snow .ql-toolbar button svg {
+  filter: brightness(0) invert(1);
+}
+
+.darkbg .ql-snow .ql-picker,
+.darkbg .ql-snow .ql-tooltip input[type="text"] {
+  color: white;
+}
+
+.darkbg .ql-snow .ql-picker-options,
+.darkbg .ql-snow .ql-tooltip,
+.darkbg .ql-snow .ql-tooltip input[type="text"] {
+  background-color: #484b52;
+}
+
+.darkbg .ql-snow .ql-tooltip[data-mode="link"]::before {
+  color: white;
+
+}
+
+.ql-editor,
+.ql-snow * {
+  font-size: 16px;
+  font-family: inherit !important;
+}
+
+.ql-editor.ql-blank::before {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #777e89;
+}
+
+.ql-container.ql-snow {
+  border: 0;
+}
+
+.ql-toolbar.ql-snow {
+  border-width: 0 0 1px 0;
+}
+
+.ql-toolbar.ql-snow .ql-picker-label,
+.ql-toolbar.ql-snow .ql-picker-options {
+  border: 0;
+}
+
+.ql-snow .ql-picker.ql-expanded .ql-picker-options {
+  top: 33px;
+}
+
+.ql-snow .ql-picker-options {
+  padding: 5px 19px;
+  box-shadow: none;
+  border-radius: 9px;
+}
+
+.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+  color: inherit;
+}
+
+.ql-snow .ql-tooltip {
+  left: 0 !important;
+  border: 0;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 12%);
+  border-radius: 5px;
+}
+
+.ql-snow .ql-tooltip input[type="text"] {
+  height: auto;
+  padding: 5px 8px;
+  border-radius: 5px;
+  outline: 0;
+}
+
+.ql-container.ql-snow {
+  border: 1px solid var(--color-border) !important;
+}
+
+.react-datepicker-wrapper {
+  display: block !important;
+}
+
+/* For Range Slider Dot Color */
+#default-range::-webkit-slider-thumb {
+  background-color: var(--color-primary);
+}
+
+#default-range::-moz-range-thumb {
+  background-color: var(--color-primary);
+}
+
+#default-range::-ms-thumb {
+  background-color: var(--color-primary);
+}
+
+
+.email-content p {
+  margin: 12px 0;
+}
+
+
+.card-hover {
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.card-hover:hover img {
+  transform: scale(1.09);
+  transition: transform .2s;
+}
+
+
+.product-thumb .slick-current img {
+  border: 2px solid var(--color-primary) !important;
+}
+
+.product-thumb .slick-slide img {
+  border: 2px solid transparent;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #2b2b2b
+}
+
+.slick-next {
+  right: 15px
+}
+
+.slick-prev {
+  left: 15px;
+  z-index: 1;
+}

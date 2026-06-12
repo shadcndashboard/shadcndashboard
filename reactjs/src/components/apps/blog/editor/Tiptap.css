@@ -1,0 +1,154 @@
+
+/* Editor Container */
+.editor-container {
+  max-width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background-color: transparent;
+  
+  font-family: 'Arial', sans-serif;
+}
+.editor-container .ProseMirror{
+  overflow-y: auto;
+}
+.dark .editor-container{
+  border: 1px solid var(--color-border)!important;
+}
+.editor-container ol{
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+.editor-container ul{
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  padding: 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.dark .toolbar{
+  border: 1px solid var(--color-border)!important;
+}
+
+
+.tiptap.ProseMirror.ProseMirror-focused{
+  outline: none;
+  border: 1px solid var(--color-primary) !important;
+  border-radius: 6px;
+}
+.tiptap.ProseMirror{
+  height: 100px;
+  padding:6px 10px;
+  border: 1px solid var(--color-border) !important;
+  border-radius: 4px;
+  font-size: 16px;
+  color: var(--color-dark);
+  font-weight: 500 !important;
+}
+.dark .tiptap.ProseMirror{
+  color: var(--color-white);
+  font-weight: 500 !important;
+}
+
+.dark .tiptap.ProseMirror{
+  border: 1px solid var(--color-border) !important;
+}
+
+.output h3{
+  font-size: 14px;
+  margin: 12px 0px 10px 0px;
+}
+.output p{
+  font-size: 16px;
+  color: var(--color-dark);
+}
+.dark .output p{
+  font-size: 16px;
+  color: var(--color-bodytext);
+}
+
+
+
+/* Editor Content */
+.editor-content {
+  min-height: 300px;
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  overflow-y: auto;
+}
+.dark .editor-content {
+  border: 1px solid var(--color-darkborder)!important;
+}
+/* Editor Content Placeholder */
+.editor-content p {
+  margin-bottom: 1rem;
+}
+
+/* Blockquote */
+.editor-content blockquote {
+  border-left: 4px solid #007bff;
+  padding-left: 1rem;
+  font-style: italic;
+  color: #555;
+  background-color: #f9f9f9;
+  margin: 1rem 0;
+}
+
+/* Code Block */
+.editor-content pre {
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Inline Code */
+.editor-content code {
+  background-color: #f4f4f4;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #d6336c;
+}
+
+/* Links */
+.editor-content a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.editor-content a:hover {
+  text-decoration: none;
+  color: #0056b3;
+}
+
+/* Lists */
+.editor-content ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.editor-content ol {
+  padding-left: 1.5rem;
+  list-style-type: decimal;
+}
+
+.editor-content li {
+  margin-bottom: 0.5rem;
+}

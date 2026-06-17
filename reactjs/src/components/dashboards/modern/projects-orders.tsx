@@ -1,11 +1,18 @@
+;
 
 import { BriefcaseBusiness, ArrowDownUp, Ellipsis } from "lucide-react";
 import { CardHeader, CardContent, CardTitle } from "@/components/ui/card";
 import { DashboardCard } from "../../shared/dashboard-card";
 import { Table,TableBody,TableCell,TableHead,TableHeader,TableRow } from "@/components/ui/table";
-
 import SimpleBar from "simplebar-react";
 import { Button } from "@/components/ui/button";
+import avatar1 from "@/assets/images/profile/user-1.png"
+import avatar2 from "@/assets/images/profile/user-2.png"
+import avatar3 from "@/assets/images/profile/user-3.png"
+import avatar4 from "@/assets/images/profile/user-4.png"
+import avatar9 from "@/assets/images/profile/user-9.png"
+import avatar7 from "@/assets/images/profile/user-7.png"
+import avatar6 from "@/assets/images/profile/user-6.png"
 
 type StatusKey = "Processing" | "Delayed" | "Delivered" | "Cancelled";
 
@@ -29,7 +36,7 @@ const orders: {
     {
       id: "SD-2026-001",
       project: "Modernize",
-      avatar: "/images/profile/user-2.png",
+      avatar: avatar2,
       name: "Emily Carter",
       role: "Project Manager",
       status: "Processing",
@@ -39,7 +46,7 @@ const orders: {
     {
       id: "SD-2026-002",
       project: "Spike Admin",
-      avatar: "/images/profile/user-3.png",
+      avatar: avatar3,
       name: "Jason Miller",
       role: "Web Developer",
       status: "Delayed",
@@ -49,7 +56,7 @@ const orders: {
     {
       id: "SD-2026-003",
       project: "Material Pro",
-      avatar: "/images/profile/user-7.png",
+      avatar: avatar7,
       name: "Ryan Scott",
       role: "UI/UX Designer",
       status: "Delivered",
@@ -59,7 +66,7 @@ const orders: {
     {
       id: "SD-2026-004",
       project: "Xtreme Admin",
-      avatar: "/images/profile/user-6.png",
+      avatar: avatar6,
       name: "Olivia Williams",
       role: "Frontend Developer",
       status: "Delivered",
@@ -69,7 +76,7 @@ const orders: {
     {
       id: "SD-2026-005",
       project: "Nova Suite",
-      avatar: "/images/profile/user-4.png",
+      avatar: avatar4,
       name: "Lisa Park",
       role: "Frontend Developer",
       status: "Cancelled",
@@ -79,7 +86,7 @@ const orders: {
     {
       id: "SD-2026-006",
       project: "Pulse CRM",
-      avatar: "/images/profile/user-9.png",
+      avatar: avatar9,
       name: "David Kim",
       role: "Backend Developer",
       status: "Processing",
@@ -89,7 +96,7 @@ const orders: {
     {
       id: "SD-2026-007",
       project: "Vertex UI",
-      avatar: "/images/profile/user-1.png",
+      avatar: avatar1,
       name: "Anna Martinez",
       role: "UI/UX Designer",
       status: "Delivered",
@@ -181,7 +188,7 @@ export default function ProjectsOrders() {
                               alt={order.name}
                               width={30}
                               height={30}
-                              className="rounded-full object-cover shrink-0 w-8 h-8"
+                              className="rounded-full object-cover shrink-0"
                             />
                             <div className="flex flex-col leading-5">
                               <span className="text-sm font-medium text-foreground whitespace-nowrap">

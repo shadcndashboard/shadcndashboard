@@ -18,7 +18,7 @@ export default function TotalProfit() {
               </p>
               <div className="flex items-center gap-2">
                 <h3 className="text-2xl font-semibold">1.35m</h3>
-                <Badge variant={"destructive"}>20%</Badge>
+                <Badge variant={"outline"}>20%</Badge>
               </div>
             </div>
             <div className="border border-border p-2.5 w-fit rounded-md">

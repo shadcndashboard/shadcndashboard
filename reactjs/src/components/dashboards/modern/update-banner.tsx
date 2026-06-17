@@ -1,8 +1,7 @@
-
+'use client'
 import { CardContent } from '@/components/ui/card';
 import { DashboardCard } from "../../shared/dashboard-card";
 import { Button } from '@/components/ui/button';
-
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router';
 
@@ -22,7 +21,7 @@ export default function UpdateBanner() {
             Sales revenue increased <span className="text-emerald-600">40%</span> in 1 week
           </p>
         </div>
-        <Link to={'#'}>
+        <Link to={'/react-tables/order-datatable'}>
           <Button variant={'outline'} className="flex gap-1.5 px-4 py-2 h-auto rounded-md cursor-pointer">
             See Statistics
             <span>

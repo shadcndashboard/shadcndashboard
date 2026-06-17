@@ -1,10 +1,9 @@
-
+'use client'
 import { v4 as uuidv4 } from 'uuid';
 import { useState } from "react";
 
 import SimpleBar from 'simplebar-react';
 import { CardContent, CardHeader, CardTitle, CardAction } from '@/components/ui/card';
-import { DashboardCard } from "../../shared/dashboard-card";
 import { Badge } from '@/components/ui/badge';
 import {
   Table,
@@ -19,12 +18,12 @@ import {
   InputGroupAddon,
   InputGroupInput,
 } from "@/components/ui/input-group";
-
 import {
 
   SearchIcon,
 
 } from "lucide-react";
+import { DashboardCard } from 'src/components/shared/dashboard-card';
 export default function RecentOrders() {
   const ProductTableData = [
     {
@@ -140,7 +139,7 @@ export default function RecentOrders() {
                         <div className="flex items-center gap-2">
                           <img
                             src={item.productImg}
-                            className="rounded-full bg-black/20 dark:bg-white/20 pt-0.5 h-8 w-8"
+                            className="rounded-full bg-black/20 dark:bg-white/20 pt-0.5"
                             alt="product-img"
                             width={32}
                             height={32}

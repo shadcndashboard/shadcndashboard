@@ -133,14 +133,6 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
-
-
-@utility frontend-page {
-  & .container {
-    @apply max-w-[1410px];
-  }
-}
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -282,12 +274,6 @@ html[data-card-shadow="false"] [data-slot="card"] {
 
 [data-slot="chart"] {
   @apply h-72 w-full;
-}
-
-@utility frontend-page {
-  & .container {
-    @apply max-w-[1410px];
-  }
 }
 
 @utility container {

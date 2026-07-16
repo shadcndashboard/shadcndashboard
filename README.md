@@ -1,0 +1,401 @@
+<p align="center">
+   <a href="https://shadcndashboard.dev" target="_blank">
+      <img src="https://shadcndashboard-demo.vercel.app/images/logos/logoicon.svg" alt="shadcndashboard-logo" width="50px" height="50px">
+   </a>
+</p>
+
+<h1 align="center">
+   <a href="https://shadcndashboard.dev" target="_blank" align="center">
+      Shadcn Dashboard - Free Shadcn Admin Dashboard Template (Next.js + React)
+   </a>
+</h1>
+
+<p align="start">Shadcn Dashboard is a modern, responsive admin dashboard template available in both Next.js and React (Vite) versions. Built with Shadcn UI and Tailwind CSS v4, it ships with a modern dashboard, Blog, Notes & Tickets apps, authentication pages, form layouts, data tables, user profile, and rich UI components — giving you everything you need to build your next admin panel faster.</p>
+
+<!-- ![GitHub](https://img.shields.io/github/license/shadcndashboard/shadcndashboard) ![GitHub issues](https://img.shields.io/github/issues/shadcndashboard/shadcndashboard) ![GitHub closed issues](https://img.shields.io/github/issues-closed/shadcndashboard/shadcndashboard) ![Twitter Follow](https://img.shields.io/twitter/follow/shadcndashboard?style=social) -->
+
+<kbd>[![ShadcnDashboard - Demo Screenshot](https://shadcndashboard-demo.vercel.app/OG-Image.png)](https://shadcndashboard.dev)</kbd>
+
+## Introduction 📊
+
+ShadcnDashboard is built with Next.js (App Router) and React (Vite), offering two production-ready admin dashboard starters to kickstart your next project. It features a modern dashboard, Blog, Notes & Tickets apps, authentication flows, form layouts with validation, data tables, user profile pages, and a comprehensive library of Shadcn UI components.
+
+[View Demo (Next.js)](https://shadcndashboard-demo.vercel.app)
+
+[View Demo (React)](https://shadcndashboard-demo.vercel.app)
+
+[View Documentation](https://shadcndashboard.dev/docs/getting-started)
+
+<p>
+   Crafted with ❤️ by
+   <a href="https://shadcndashboard.dev" target="_blank">
+      shadcndashboard.dev
+   </a>
+   , committed to empowering the open-source community.
+</p>
+
+## Key Features ✨
+
+- **Modern Dashboard** - Ready-to-use dashboard layout with statistics, charts, and widgets
+- **Two Versions** - Both Next.js (App Router) and React (Vite) editions included
+- **Apps** - Blog, Notes, and Tickets apps out of the box
+- **Authentication Pages** - Login, Register, Forgot Password, OTP Verification, Reset Password, Two-Factor Auth
+- **Forms & Tables** - Vertical & Horizontal form layouts, form validation, and a data table
+- **User Profile** - Rich profile page with connections and activity views
+- **Built with Next.js 16 / React 19** - Modern, fast, and SEO-friendly
+- **Tailwind CSS v4** - Easy theming and utility-based styling
+- **Responsive & Mobile-First** - Designed to look great on all devices
+- **Dark Mode Support** - Full light/dark theme toggle via `next-themes`
+- **Role-Based Access** - CASL-powered permissions system built in
+- **Rich Charting** - ApexCharts & Recharts integration for beautiful visualizations
+- **Drag & Drop** - `@dnd-kit` and `@hello-pangea/dnd` for interactive UIs
+- **Rich Text Editor** - TipTap-powered editor for Blog & Notes apps
+- **AI Integration** - Google Generative AI SDK included
+
+## Folder Structure
+
+### Next.js Version
+
+```
+|-- public/                                    # Static assets served from the site root
+|   |-- images/                                # Public images, logos, and media
+|-- app/                                       # Next.js App Router routes and layouts
+|   |-- globals.css                            # Tailwind CSS, CSS variables, and theme tokens
+|   |-- layout.tsx                             # Root layout, fonts, metadata, and providers
+|   |-- not-found.tsx                          # Custom 404 page
+|   |-- api/                                   # Route handlers used by demo features
+|   |-- auth/                                  # Auth routes (outside dashboard shell)
+|   |   |-- auth2/                             # Two-factor authentication pages
+|   |   |-- authforms/                         # Login, Register, Forgot Password, etc.
+|   |   |-- error/                             # Error pages
+|   |   |-- maintenance/                       # Maintenance page
+|   |-- (dashboard-layout)/                    # Routes with sidebar + header shell
+|   |   |-- layout.tsx                         # Dashboard shell layout (Sidebar + Header)
+|   |   |-- page.tsx                           # Main dashboard page
+|   |   |-- apps/                              # App routes
+|   |   |   |-- blog/                          # Blog app
+|   |   |   |-- notes/                         # Notes app
+|   |   |   |-- tickets/                       # Tickets app
+|   |   |-- pages/                             # Inner page routes
+|   |   |   |-- form/                          # Form layouts and validation
+|   |   |   |-- tables/                        # Data table pages
+|   |   |   |-- user-profile/                  # User profile pages
+|   |   |-- layout/                            # Dashboard layout components
+|   |   |-- icons/                             # Icon pages
+|   |   |-- types/                             # Route-level TypeScript types
+|-- components/                                # Shared React components
+|   |-- ui/                                    # shadcn/ui primitives
+|   |-- Themeprovider.tsx                      # Theme provider wrapper
+|-- hooks/                                     # Reusable client hooks
+|-- lib/                                       # General utilities and shared helpers
+|-- components.json                            # shadcn/ui aliases and registry config
+|-- eslint.config.mjs                          # ESLint configuration
+|-- next.config.ts                             # Next.js configuration
+|-- package.json                               # Scripts and dependencies
+|-- postcss.config.mjs                         # Tailwind CSS v4 PostCSS setup
+|-- tsconfig.json                              # TypeScript compiler and path aliases
+```
+
+### React (Vite) Version
+
+```
+|-- public/                                    # Static assets served from the site root
+|-- src/                                       # Application source code
+|   |-- App.tsx                                # Root application component
+|   |-- main.tsx                               # Application entry point
+|   |-- api/                                   # API service layer and handlers
+|   |-- assets/                                # Local SVGs, images, and static helpers
+|   |-- components/                            # Shared React components
+|   |-- context/                               # React context providers
+|   |-- css/                                   # Global and component-level CSS
+|   |-- hooks/                                 # Reusable client hooks
+|   |-- layouts/                               # Dashboard shell layouts (Sidebar + Header)
+|   |-- lib/                                   # General utilities and helpers
+|   |-- routes/                                # React Router route definitions
+|   |   |-- Router.tsx                         # Central route configuration
+|   |-- types/                                 # Shared TypeScript interfaces and types
+|   |-- utils/                                 # Feature-specific helper functions
+|   |-- views/                                 # Page-level UI composed by route files
+|   |   |-- apps/                              # App view modules
+|   |   |   |-- blog/                          # Blog app views
+|   |   |   |-- notes/                         # Notes app views
+|   |   |   |-- tickets/                       # Tickets app views
+|   |   |-- auth/                              # Auth page views
+|   |   |   |-- auth2/                         # Two-factor auth views
+|   |   |   |-- authforms/                     # Login, Register, etc. views
+|   |   |   |-- error/                         # Error page views
+|   |   |   |-- maintenance/                   # Maintenance page views
+|   |   |-- dashboards/                        # Dashboard charts, statistics, and widgets
+|   |   |   |-- modern/                        # Modern dashboard view
+|   |   |-- icons/                             # Icon showcase views
+|   |   |-- pages/                             # Inner page views
+|   |   |   |-- form/                          # Form layout and validation views
+|   |   |   |-- tables/                        # Data table views
+|   |   |   |-- user-profile/                  # User profile views
+|   |   |-- spinner/                           # Loading spinner views
+|-- components.json                            # shadcn/ui aliases and registry config
+|-- index.html                                 # HTML entry point
+|-- vite.config.ts                             # Vite configuration
+|-- package.json                               # Scripts and dependencies
+|-- postcss.config.js                          # Tailwind CSS v4 PostCSS setup
+|-- tsconfig.json                              # TypeScript compiler and path aliases
+```
+
+**Key UI Sections**
+
+- **Dashboard** - Modern overview with statistics, charts, and widgets
+- **Apps** - Blog, Notes, and Tickets management
+- **Authentication** - Login, Register, and account recovery flows
+- **Forms & Tables** - Layouts, validation, and data table views
+- **User Pages** - Profile page with connections and activity
+
+---
+
+## What's Included 📦
+
+- Dashboard
+  - Modern Dashboard
+- Apps
+  - Blog
+  - Notes
+  - Tickets
+- Pages
+  - User Profile
+  - Form Layouts
+  - Form Validation
+  - Data Table
+- Authentication
+  - Login Page
+  - Register Page
+  - Forgot Password Page
+  - OTP Verification Page
+  - Reset Password Page
+  - Two Steps Verification Page
+  - Error Page
+  - Maintenance Page
+- Components
+  - Shadcn UI Primitives
+  - ApexCharts & Recharts
+  - TipTap Rich Text Editor
+  - Drag & Drop (DnD Kit + Hello Pangea)
+  - Data Tables (TanStack Table)
+  - Date Pickers & Calendar
+  - File Dropzone
+  - OTP Input
+- Miscellaneous
+  - Icons Showcase
+  - Dark / Light Mode
+  - Role-Based Access (CASL)
+  - AI Integration (Google GenAI)
+
+## What's in Premium Version 💎
+
+| Feature Area         | ShadcnDashboard Free                                                              | ShadcnDashboard Pro                                                               |
+| -------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| Dashboard Demo       | [Free Demo](https://shadcndashboard.dev/demo)                                     | [Pro Demo](https://shadcndashboard.dev/demo/pro)                                  |
+| Get Dashboard        | [Download](https://shadcndashboard.dev)                                           | [Purchase](https://shadcndashboard.dev/pricing)                                   |
+| Frameworks           | Next.js + React (Vite)                                                            | Next.js + React (Vite)                                                            |
+| Dashboards           | Modern Dashboard                                                                  | Modern, Analytics, eCommerce, CRM, Sales, Finance, Logistics dashboards           |
+| Dashboard Layouts    | Vertical layout                                                                   | Vertical, Horizontal, Collapsed, Icon Menu, Full Navbar layouts                   |
+| Apps                 | Blog, Notes, Tickets                                                              | Blog, Notes, Tickets, Chat, Kanban, Calendar, Mail, Contacts, Roles & Permissions |
+| Authentication Pages | Login, Register, Forgot Password, OTP, Reset Password, Two-Steps (1 Variant each) | All auth pages with 3 Variants each                                               |
+| Error Pages          | 1 Variant                                                                         | 4 Variants                                                                        |
+| User Profile         | Profile page                                                                      | Profile, Connections, Teams, Projects pages                                       |
+| Form Layouts         | Vertical, Horizontal                                                              | Vertical, Horizontal, Sticky, Wizard — with more forms & variants                 |
+| Form Validation      | ✅                                                                                | Included with more forms & variants                                               |
+| Form Wizard          | —                                                                                 | Icon Stepper, Number Stepper variants                                             |
+| Data Table           | ✅                                                                                | Included with more variants                                                       |
+| Theme Customizer     | Theme Toggle                                                                      | Full Theme Customizer with color palette control                                  |
+| State Management     | React Context                                                                     | Zustand-powered global state management                                           |
+| i18n                 | —                                                                                 | i18next multi-language support                                                    |
+| RTL Support          | —                                                                                 | Full RTL layout support                                                           |
+| Landing Page         | —                                                                                 | ✅                                                                                |
+| Onboarding           | —                                                                                 | 2 Variants                                                                        |
+| Pricing Page         | —                                                                                 | ✅                                                                                |
+| FAQ Page             | —                                                                                 | ✅                                                                                |
+| Empty State Pages    | —                                                                                 | 2 Variants                                                                        |
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 18, 20, or 22+
+- pnpm (recommended) or npm
+
+### Next.js Version
+
+1. **Navigate to the Next.js directory:**
+
+   ```bash
+   cd nextjs
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   pnpm install
+   ```
+
+3. **Start the development server:**
+
+   ```bash
+   pnpm dev
+   ```
+
+   The site will be available at `http://localhost:3000`
+
+4. **Build for production:**
+
+   ```bash
+   pnpm build
+   ```
+
+5. **Preview the production build:**
+
+   ```bash
+   pnpm start
+   ```
+
+### React (Vite) Version
+
+1. **Navigate to the React directory:**
+
+   ```bash
+   cd reactjs
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   pnpm install
+   ```
+
+3. **Start the development server:**
+
+   ```bash
+   pnpm dev
+   ```
+
+   The site will be available at `http://localhost:5173`
+
+4. **Build for production:**
+
+   ```bash
+   pnpm build
+   ```
+
+5. **Preview the production build:**
+
+   ```bash
+   pnpm preview
+   ```
+
+## 🧞 Available Commands
+
+All scripts can be run using your package manager of choice (npm, pnpm, yarn, or bun) from the respective version's directory.
+
+### Next.js
+
+| Command | Action                                                                           |
+| :------ | :------------------------------------------------------------------------------- |
+| `dev`   | Starts the Next.js development server with hot-reload at `http://localhost:3000` |
+| `build` | Creates an optimized production build of your application                        |
+| `start` | Serves the production build locally for testing before deployment                |
+| `lint`  | Runs ESLint to check for potential errors and code quality issues                |
+
+### React (Vite)
+
+| Command   | Action                                                                        |
+| :-------- | :---------------------------------------------------------------------------- |
+| `dev`     | Starts the Vite development server with hot-reload at `http://localhost:5173` |
+| `build`   | Creates an optimized production build via TypeScript + Vite                   |
+| `preview` | Preview the production build locally before deploying                         |
+| `lint`    | Runs ESLint to check for potential errors and code quality issues             |
+
+## 🌐 Deployment
+
+Check out our [Deployment docs](https://shadcndashboard.dev/docs/deployment) for step-by-step guides on deploying to Vercel, Netlify, and more.
+
+## Documentation 📚
+
+For comprehensive documentation, please visit [shadcndashboard.dev/docs](https://shadcndashboard.dev/docs/getting-started).
+
+## Changelog 📆
+
+Please refer to the [CHANGELOG file](CHANGELOG.md). We add detailed release notes to each new release.
+
+## License ©
+
+- Copyright © [shadcndashboard.dev](https://shadcndashboard.dev/)
+- Licensed under [MIT](LICENSE)
+- All our free items are Open Source and licensed under MIT. You can use our free items for personal as well as commercial purposes. We just need attribution from your end. Copy the link below and paste it in the footer of your web application or project.
+  ```html
+  <a href="https://shadcndashboard.dev/">ShadcnDashboard</a>
+  ```
+
+---
+
+<br />
+
+<a href="https://shadcndashboard.dev" target="_blank">
+  <img src="https://shadcndashboard.dev/banner.png" alt="shadcndashboard banner" width="1200">
+</a>
+
+<p>
+   <a href="https://shadcndashboard.dev" target="_blank">
+      shadcndashboard.dev
+   </a>
+   is a free and open-source admin dashboard template built with Shadcn UI, Tailwind CSS v4, Next.js, and React — designed to help developers ship beautiful admin panels faster. 🚀
+</p>
+
+## Overview 🌏
+
+**ShadcnDashboard is not just another UI kit — it's a full-stack-ready admin template**. It combines carefully crafted components, layouts, apps, and pages into a cohesive, production-ready starter. Both a Next.js (App Router) and a React (Vite) version are included, so you can choose the stack that fits your project.
+
+Building on the rock-solid foundation of Shadcn UI components, ShadcnDashboard enhances them with custom layouts, chart integrations, app modules, and authentication flows — so you can go from zero to a fully functional admin panel in minutes.
+
+### Not a standard library, but a complete admin starter
+
+Following the philosophy of Shadcn, ShadcnDashboard isn't a conventional "install-from-NPM" library. Instead, it's a copy-and-own starter template — you own all the code, you can modify styles, adjust logic, and integrate with any backend or API. No black-box abstractions, no vendor lock-in.
+
+## Why ShadcnDashboard? 💡
+
+Shadcn UI provides a fantastic foundation of accessible, customizable components. However, building a full admin panel from scratch still requires significant effort: wiring up layouts, adding chart libraries, setting up authentication pages, configuring tables, and more.
+
+ShadcnDashboard does all of that for you — out of the box, in both Next.js and React — so you can focus on building your product instead of scaffolding infrastructure.
+
+## Community 🤝
+
+Join the ShadcnDashboard community to ask questions, share ideas, and get help:
+
+- 🐦 [Follow us on Twitter](https://x.com/shadcndashboard)
+- 🎮 [Join us on Discord](https://discord.gg/shadcndashboard)
+
+## Credits 🤘
+
+We are grateful for the contributions of the open-source community, particularly:
+
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Next.js](https://nextjs.org/)
+- [Vite](https://vitejs.dev/)
+- [TanStack Table](https://tanstack.com/table)
+- [ApexCharts](https://apexcharts.com/)
+- [TipTap](https://tiptap.dev/)
+
+These projects form the backbone of ShadcnDashboard.
+
+## Useful Links 🎁
+
+- [ShadcnDashboard Website](https://shadcndashboard.dev)
+- [Documentation](https://shadcndashboard.dev/docs)
+- [Next.js Demo](https://shadcndashboard.dev/demo/nextjs)
+- [React Demo](https://shadcndashboard.dev/demo/react)
+- [Changelog](CHANGELOG.md)
+- [License](LICENSE)
+
+## Social Media :earth_africa:
+
+- [Twitter / X](https://x.com/shadcndashboard)
+- [Discord](https://discord.gg/shadcndashboard)
+- [GitHub](https://github.com/shadcndashboard/shadcndashboard)

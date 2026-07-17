@@ -10,7 +10,7 @@
    </a>
 </h1>
 
-<p align="start">Shadcn Dashboard is a modern, responsive admin dashboard template available in both Next.js and React (Vite) versions. Built with Shadcn UI and Tailwind CSS v4, it ships with a modern dashboard, Blog, Notes & Tickets apps, authentication pages, form layouts, data tables, user profile, and rich UI components - giving you everything you need to build your next admin panel faster.</p>
+<p align="start">Shadcn Dashboard is a modern, responsive admin dashboard template available in both Next.js and React (Vite) versions. Built with Shadcn UI, Base UI and Tailwind CSS v4, it ships with a modern dashboard, Blog, Notes & Tickets apps, authentication pages, form layouts, data tables, user profile, and rich UI components - giving you everything you need to build your next admin panel faster.</p>
 
 <!-- ![GitHub](https://img.shields.io/github/license/shadcndashboard/shadcndashboard) ![GitHub issues](https://img.shields.io/github/issues/shadcndashboard/shadcndashboard) ![GitHub closed issues](https://img.shields.io/github/issues-closed/shadcndashboard/shadcndashboard) ![Twitter Follow](https://img.shields.io/twitter/follow/shadcndashboard?style=social) -->
 
@@ -24,7 +24,7 @@ Shadcn Dashboard is built with Next.js (App Router) and React (Vite), offering t
 
 [View Demo (React)](https://shadcndashboard-demo.vercel.app)
 
-[View Documentation](https://shadcndashboard.dev/docs/getting-started)
+[View Documentation](https://shadcndashboard.dev/docs)
 
 <p>
    Crafted with ❤️ by
@@ -285,13 +285,9 @@ All scripts can be run using your package manager of choice (npm, pnpm, yarn, or
 | `preview` | Preview the production build locally before deploying                         |
 | `lint`    | Runs ESLint to check for potential errors and code quality issues             |
 
-## 🌐 Deployment
-
-Check out our [Deployment docs](https://shadcndashboard.dev/docs/deployment) for step-by-step guides on deploying to Vercel, Netlify, and more.
-
 ## Documentation 📚
 
-For comprehensive documentation, please visit [shadcndashboard.dev/docs](https://shadcndashboard.dev/docs/getting-started).
+For comprehensive documentation, please visit [shadcndashboard.dev/docs](https://shadcndashboard.dev/docs).
 
 ## Changelog 📆
 

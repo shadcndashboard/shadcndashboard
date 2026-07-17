@@ -14,11 +14,11 @@
 
 <!-- ![GitHub](https://img.shields.io/github/license/shadcndashboard/shadcndashboard) ![GitHub issues](https://img.shields.io/github/issues/shadcndashboard/shadcndashboard) ![GitHub closed issues](https://img.shields.io/github/issues-closed/shadcndashboard/shadcndashboard) ![Twitter Follow](https://img.shields.io/twitter/follow/shadcndashboard?style=social) -->
 
-<kbd>[![ShadcnDashboard - Demo Screenshot](https://shadcndashboard-demo.vercel.app/OG-Image.png)](https://shadcndashboard.dev)</kbd>
+<kbd>[![Shadcn Dashboard - Demo Screenshot](https://shadcndashboard-demo.vercel.app/OG-Image.png)](https://shadcndashboard.dev)</kbd>
 
 ## Introduction 📊
 
-ShadcnDashboard is built with Next.js (App Router) and React (Vite), offering two production-ready admin dashboard starters to kickstart your next project. It features a modern dashboard, Blog, Notes & Tickets apps, authentication flows, form layouts with validation, data tables, user profile pages, and a comprehensive library of Shadcn UI components.
+Shadcn Dashboard is built with Next.js (App Router) and React (Vite), offering two production-ready admin dashboard starters to kickstart your next project. It features a modern dashboard, Blog, Notes & Tickets apps, authentication flows, form layouts with validation, data tables, user profile pages, and a comprehensive library of Shadcn UI components.
 
 [View Demo (Next.js)](https://shadcndashboard-demo.vercel.app)
 
@@ -188,33 +188,6 @@ ShadcnDashboard is built with Next.js (App Router) and React (Vite), offering tw
   - Role-Based Access (CASL)
   - AI Integration (Google GenAI)
 
-## What's in Premium Version 💎
-
-| Feature Area         | ShadcnDashboard Free                                                              | ShadcnDashboard Pro                                                               |
-| -------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| Dashboard Demo       | [Free Demo](https://shadcndashboard.dev/demo)                                     | [Pro Demo](https://shadcndashboard.dev/demo/pro)                                  |
-| Get Dashboard        | [Download](https://shadcndashboard.dev)                                           | [Purchase](https://shadcndashboard.dev/pricing)                                   |
-| Frameworks           | Next.js + React (Vite)                                                            | Next.js + React (Vite)                                                            |
-| Dashboards           | Modern Dashboard                                                                  | Modern, Analytics, eCommerce, CRM, Sales, Finance, Logistics dashboards           |
-| Dashboard Layouts    | Vertical layout                                                                   | Vertical, Horizontal, Collapsed, Icon Menu, Full Navbar layouts                   |
-| Apps                 | Blog, Notes, Tickets                                                              | Blog, Notes, Tickets, Chat, Kanban, Calendar, Mail, Contacts, Roles & Permissions |
-| Authentication Pages | Login, Register, Forgot Password, OTP, Reset Password, Two-Steps (1 Variant each) | All auth pages with 3 Variants each                                               |
-| Error Pages          | 1 Variant                                                                         | 4 Variants                                                                        |
-| User Profile         | Profile page                                                                      | Profile, Connections, Teams, Projects pages                                       |
-| Form Layouts         | Vertical, Horizontal                                                              | Vertical, Horizontal, Sticky, Wizard — with more forms & variants                 |
-| Form Validation      | ✅                                                                                | Included with more forms & variants                                               |
-| Form Wizard          | —                                                                                 | Icon Stepper, Number Stepper variants                                             |
-| Data Table           | ✅                                                                                | Included with more variants                                                       |
-| Theme Customizer     | Theme Toggle                                                                      | Full Theme Customizer with color palette control                                  |
-| State Management     | React Context                                                                     | Zustand-powered global state management                                           |
-| i18n                 | —                                                                                 | i18next multi-language support                                                    |
-| RTL Support          | —                                                                                 | Full RTL layout support                                                           |
-| Landing Page         | —                                                                                 | ✅                                                                                |
-| Onboarding           | —                                                                                 | 2 Variants                                                                        |
-| Pricing Page         | —                                                                                 | ✅                                                                                |
-| FAQ Page             | —                                                                                 | ✅                                                                                |
-| Empty State Pages    | —                                                                                 | 2 Variants                                                                        |
-
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -330,7 +303,7 @@ Please refer to the [CHANGELOG file](CHANGELOG.md). We add detailed release note
 - Licensed under [MIT](LICENSE)
 - All our free items are Open Source and licensed under MIT. You can use our free items for personal as well as commercial purposes. We just need attribution from your end. Copy the link below and paste it in the footer of your web application or project.
   ```html
-  <a href="https://shadcndashboard.dev/">ShadcnDashboard</a>
+  <a href="https://shadcndashboard.dev/">Shadcn Dashboard</a>
   ```
 
 ---
@@ -338,7 +311,7 @@ Please refer to the [CHANGELOG file](CHANGELOG.md). We add detailed release note
 <br />
 
 <a href="https://shadcndashboard.dev" target="_blank">
-  <img src="https://shadcndashboard.dev/banner.png" alt="shadcndashboard banner" width="1200">
+  <img src="https://shadcndashboard.dev/images/og-image/homepage.webp" alt="shadcndashboard banner" width="1200">
 </a>
 
 <p>
@@ -350,26 +323,26 @@ Please refer to the [CHANGELOG file](CHANGELOG.md). We add detailed release note
 
 ## Overview 🌏
 
-**ShadcnDashboard is not just another UI kit — it's a full-stack-ready admin template**. It combines carefully crafted components, layouts, apps, and pages into a cohesive, production-ready starter. Both a Next.js (App Router) and a React (Vite) version are included, so you can choose the stack that fits your project.
+**Shadcn Dashboard is not just another UI kit — it's a full-stack-ready admin template**. It combines carefully crafted components, layouts, apps, and pages into a cohesive, production-ready starter. Both a Next.js (App Router) and a React (Vite) version are included, so you can choose the stack that fits your project.
 
-Building on the rock-solid foundation of Shadcn UI components, ShadcnDashboard enhances them with custom layouts, chart integrations, app modules, and authentication flows — so you can go from zero to a fully functional admin panel in minutes.
+Building on the rock-solid foundation of Shadcn UI components, Shadcn Dashboard enhances them with custom layouts, chart integrations, app modules, and authentication flows — so you can go from zero to a fully functional admin panel in minutes.
 
 ### Not a standard library, but a complete admin starter
 
-Following the philosophy of Shadcn, ShadcnDashboard isn't a conventional "install-from-NPM" library. Instead, it's a copy-and-own starter template — you own all the code, you can modify styles, adjust logic, and integrate with any backend or API. No black-box abstractions, no vendor lock-in.
+Following the philosophy of Shadcn, Shadcn Dashboard isn't a conventional "install-from-NPM" library. Instead, it's a copy-and-own starter template — you own all the code, you can modify styles, adjust logic, and integrate with any backend or API. No black-box abstractions, no vendor lock-in.
 
-## Why ShadcnDashboard? 💡
+## Why Shadcn Dashboard? 💡
 
 Shadcn UI provides a fantastic foundation of accessible, customizable components. However, building a full admin panel from scratch still requires significant effort: wiring up layouts, adding chart libraries, setting up authentication pages, configuring tables, and more.
 
-ShadcnDashboard does all of that for you — out of the box, in both Next.js and React — so you can focus on building your product instead of scaffolding infrastructure.
+Shadcn Dashboard does all of that for you — out of the box, in both Next.js and React — so you can focus on building your product instead of scaffolding infrastructure.
 
 ## Community 🤝
 
-Join the ShadcnDashboard community to ask questions, share ideas, and get help:
+Join the Shadcn Dashboard community to ask questions, share ideas, and get help:
 
 - 🐦 [Follow us on Twitter](https://x.com/shadcndashboard)
-- 🎮 [Join us on Discord](https://discord.gg/shadcndashboard)
+- 🎮 [Join us on Discord](https://discord.com/invite/eMzE8F6Wqs)
 
 ## Credits 🤘
 
@@ -383,19 +356,19 @@ We are grateful for the contributions of the open-source community, particularly
 - [ApexCharts](https://apexcharts.com/)
 - [TipTap](https://tiptap.dev/)
 
-These projects form the backbone of ShadcnDashboard.
+These projects form the backbone of Shadcn Dashboard.
 
 ## Useful Links 🎁
 
-- [ShadcnDashboard Website](https://shadcndashboard.dev)
+- [Shadcn Dashboard Website](https://shadcndashboard.dev)
 - [Documentation](https://shadcndashboard.dev/docs)
-- [Next.js Demo](https://shadcndashboard.dev/demo/nextjs)
-- [React Demo](https://shadcndashboard.dev/demo/react)
+- [Next.js Demo](https://shadcndashboard-demo.vercel.app/)
+- [React Demo](https://shadcndashboard-demo.vercel.app/)
 - [Changelog](CHANGELOG.md)
 - [License](LICENSE)
 
-## Social Media :earth_africa:
+## Social Media 🌐:
 
 - [Twitter / X](https://x.com/shadcndashboard)
-- [Discord](https://discord.gg/shadcndashboard)
+- [Discord](https://discord.com/invite/eMzE8F6Wqs)
 - [GitHub](https://github.com/shadcndashboard/shadcndashboard)

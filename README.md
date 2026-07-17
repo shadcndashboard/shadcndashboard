@@ -1,4 +1,4 @@
-﻿<p align="center">
+<p align="center">
    <a href="https://shadcndashboard.dev" target="_blank">
       <img src="https://shadcndashboard-demo.vercel.app/images/logos/logoicon.svg" alt="shadcndashboard-logo" width="50px" height="50px">
    </a>
@@ -314,24 +314,22 @@ Please refer to the [CHANGELOG file](CHANGELOG.md). We add detailed release note
    <a href="https://shadcndashboard.dev" target="_blank">
       shadcndashboard.dev
    </a>
-   is a free and open-source admin dashboard template built with Shadcn UI, Tailwind CSS v4, Next.js, and React - designed to help developers ship beautiful admin panels faster. 🚀
+   is a free and open-source admin dashboard template built with Shadcn UI, Base UI, Tailwind CSS v4, Next.js, and React - designed to help developers ship beautiful admin panels faster. 🚀
 </p>
 
 ## Overview 🌏
 
-**Shadcn Dashboard is not just another UI kit - it's a full-stack-ready admin template**. It combines carefully crafted components, layouts, apps, and pages into a cohesive, production-ready starter. Both a Next.js (App Router) and a React (Vite) version are included, so you can choose the stack that fits your project.
+Shadcn Dashboard is a production-ready admin dashboard kit built with React, Next.js, TypeScript, Tailwind CSS v4, Shadcn UI, and Base UI. It ships with reusable UI blocks, a full component library, pre-built app pages, and authentication flows - so you can go from zero to a fully functional admin panel in minutes.
 
-Building on the rock-solid foundation of Shadcn UI components, Shadcn Dashboard enhances them with custom layouts, chart integrations, app modules, and authentication flows - so you can go from zero to a fully functional admin panel in minutes.
+- AI-ready components with built-in prompts for ChatGPT, Claude, Cursor, Lovable, Bolt, and v0
+- MCP Server support for direct editor integration (Cursor, Windsurf, VS Code, Antigravity)
+- Pre-configured auth with Supabase, Firebase, and Clerk
+- Production-ready blocks: dashboards, charts, tables, forms, and full apps
+- Built on Base UI primitives for full design control
 
-### Not a standard library, but a complete admin starter
+### Backed by WrapPixel 🏆
 
-Following the philosophy of Shadcn, Shadcn Dashboard isn't a conventional "install-from-NPM" library. Instead, it's a copy-and-own starter template - you own all the code, you can modify styles, adjust logic, and integrate with any backend or API. No black-box abstractions, no vendor lock-in.
-
-## Why Shadcn Dashboard? 💡
-
-Shadcn UI provides a fantastic foundation of accessible, customizable components. However, building a full admin panel from scratch still requires significant effort: wiring up layouts, adding chart libraries, setting up authentication pages, configuring tables, and more.
-
-Shadcn Dashboard does all of that for you - out of the box, in both Next.js and React - so you can focus on building your product instead of scaffolding infrastructure.
+Shadcn Dashboard is proudly backed by [WrapPixel](https://wrappixel.com) - a trusted name in the admin dashboard space with over **15+ years** of experience building production-grade UI templates and component systems. WrapPixel's products are used by **600k+ developers and agencies** worldwide, consistently rated **4.9/5** for quality, consistency, and developer experience.
 
 ## Community 🤝
 
@@ -348,6 +346,7 @@ We are grateful for the contributions of the open-source community, particularly
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Next.js](https://nextjs.org/)
 - [Vite](https://vitejs.dev/)
+- [Base UI](https://mui.com/base-ui/)
 - [TanStack Table](https://tanstack.com/table)
 - [ApexCharts](https://apexcharts.com/)
 - [TipTap](https://tiptap.dev/)

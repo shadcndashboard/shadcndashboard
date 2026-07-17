@@ -1,4 +1,4 @@
-﻿# Changelog
+# Changelog
 
 All notable changes to this project will be documented in this file.
 
@@ -12,9 +12,9 @@ All notable changes to this project will be documented in this file.
 - Modern Dashboard page with statistics, charts, and widgets
 
 **Apps**
-- Blog — create, edit, and delete blog posts with a rich text editor
-- Notes — create and manage notes with drag-and-drop reordering
-- Tickets — support ticket management with a Kanban board
+- Blog: create, edit, and delete blog posts with a rich text editor
+- Notes: create and manage notes with drag-and-drop reordering
+- Tickets: support ticket management with a Kanban board
 
 **Authentication**
 - Login page

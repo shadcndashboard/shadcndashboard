@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
    <a href="https://shadcndashboard.dev" target="_blank">
       <img src="https://shadcndashboard-demo.vercel.app/images/logos/logoicon.svg" alt="shadcndashboard-logo" width="50px" height="50px">
    </a>
@@ -10,7 +10,7 @@
    </a>
 </h1>
 
-<p align="start">Shadcn Dashboard is a modern, responsive admin dashboard template available in both Next.js and React (Vite) versions. Built with Shadcn UI and Tailwind CSS v4, it ships with a modern dashboard, Blog, Notes & Tickets apps, authentication pages, form layouts, data tables, user profile, and rich UI components — giving you everything you need to build your next admin panel faster.</p>
+<p align="start">Shadcn Dashboard is a modern, responsive admin dashboard template available in both Next.js and React (Vite) versions. Built with Shadcn UI and Tailwind CSS v4, it ships with a modern dashboard, Blog, Notes & Tickets apps, authentication pages, form layouts, data tables, user profile, and rich UI components - giving you everything you need to build your next admin panel faster.</p>
 
 <!-- ![GitHub](https://img.shields.io/github/license/shadcndashboard/shadcndashboard) ![GitHub issues](https://img.shields.io/github/issues/shadcndashboard/shadcndashboard) ![GitHub closed issues](https://img.shields.io/github/issues-closed/shadcndashboard/shadcndashboard) ![Twitter Follow](https://img.shields.io/twitter/follow/shadcndashboard?style=social) -->
 
@@ -318,24 +318,24 @@ Please refer to the [CHANGELOG file](CHANGELOG.md). We add detailed release note
    <a href="https://shadcndashboard.dev" target="_blank">
       shadcndashboard.dev
    </a>
-   is a free and open-source admin dashboard template built with Shadcn UI, Tailwind CSS v4, Next.js, and React — designed to help developers ship beautiful admin panels faster. 🚀
+   is a free and open-source admin dashboard template built with Shadcn UI, Tailwind CSS v4, Next.js, and React - designed to help developers ship beautiful admin panels faster. 🚀
 </p>
 
 ## Overview 🌏
 
-**Shadcn Dashboard is not just another UI kit — it's a full-stack-ready admin template**. It combines carefully crafted components, layouts, apps, and pages into a cohesive, production-ready starter. Both a Next.js (App Router) and a React (Vite) version are included, so you can choose the stack that fits your project.
+**Shadcn Dashboard is not just another UI kit - it's a full-stack-ready admin template**. It combines carefully crafted components, layouts, apps, and pages into a cohesive, production-ready starter. Both a Next.js (App Router) and a React (Vite) version are included, so you can choose the stack that fits your project.
 
-Building on the rock-solid foundation of Shadcn UI components, Shadcn Dashboard enhances them with custom layouts, chart integrations, app modules, and authentication flows — so you can go from zero to a fully functional admin panel in minutes.
+Building on the rock-solid foundation of Shadcn UI components, Shadcn Dashboard enhances them with custom layouts, chart integrations, app modules, and authentication flows - so you can go from zero to a fully functional admin panel in minutes.
 
 ### Not a standard library, but a complete admin starter
 
-Following the philosophy of Shadcn, Shadcn Dashboard isn't a conventional "install-from-NPM" library. Instead, it's a copy-and-own starter template — you own all the code, you can modify styles, adjust logic, and integrate with any backend or API. No black-box abstractions, no vendor lock-in.
+Following the philosophy of Shadcn, Shadcn Dashboard isn't a conventional "install-from-NPM" library. Instead, it's a copy-and-own starter template - you own all the code, you can modify styles, adjust logic, and integrate with any backend or API. No black-box abstractions, no vendor lock-in.
 
 ## Why Shadcn Dashboard? 💡
 
 Shadcn UI provides a fantastic foundation of accessible, customizable components. However, building a full admin panel from scratch still requires significant effort: wiring up layouts, adding chart libraries, setting up authentication pages, configuring tables, and more.
 
-Shadcn Dashboard does all of that for you — out of the box, in both Next.js and React — so you can focus on building your product instead of scaffolding infrastructure.
+Shadcn Dashboard does all of that for you - out of the box, in both Next.js and React - so you can focus on building your product instead of scaffolding infrastructure.
 
 ## Community 🤝
 

@@ -234,14 +234,17 @@ html[data-card-shadow="false"] [data-slot="card"] {
 /*for sidebar */
 
 [data-sidebar-type="true"] {
-  .sidebar-box {
-    .hide-menu {
+  /* Only apply the icon-only + hover-preview behavior while the sidebar
+     is actually in its real collapsed ("icon") state. When it's expanded
+     (data-collapsible is empty), labels render normally with no overrides. */
+  [data-slot="sidebar"][data-collapsible="icon"] {
+    .sidebar-box .hide-menu {
       @apply hidden;
     }
 
-    &:hover {
+    .sidebar-box:hover {
       width: 250px !important;
-      @apply border-r transition-all duration-300;
+      @apply transition-all duration-300;
 
       [data-slot="sidebar-container"],
       [data-sidebar="sidebar"],
@@ -292,7 +295,7 @@ html[data-card-shadow="false"] [data-slot="card"] {
 
     }
 
-    &:not(:hover) {
+    .sidebar-box:not(:hover) {
 
       /* Ensure icons are perfectly centered in mini mode */
       [data-sidebar="menu-button"] {
@@ -315,6 +318,7 @@ html[data-card-shadow="false"] [data-slot="card"] {
     }
   }
 }
+
 
 [data-slot="chart"] {
   @apply h-72 w-full;

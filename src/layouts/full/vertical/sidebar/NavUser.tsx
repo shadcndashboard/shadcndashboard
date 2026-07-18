@@ -7,7 +7,7 @@ export function NavUser() {
     const navItems = [
         {
             title: "Help Center",
-            url: "https://shadcndashboard.dev/support",
+            url: "https://demos.shadcndashboard.dev/theme-pages/faq",
             icon: LifeBuoy,
         },
         {

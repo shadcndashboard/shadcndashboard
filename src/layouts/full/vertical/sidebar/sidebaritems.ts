@@ -309,7 +309,7 @@ const SidebarContent: MenuItem[] = [
           },
         ],
       },
-      {
+     {
         name: "Form layouts",
         id: uniqueId(),
         icon: Files,
@@ -353,7 +353,7 @@ const SidebarContent: MenuItem[] = [
           },
         ],
       },
-    
+      
     ],
   },
   {
@@ -367,7 +367,7 @@ const SidebarContent: MenuItem[] = [
         external: true
 
       },
-    
+      
       {
         name: "Charts",
         id: uniqueId(),
@@ -476,7 +476,7 @@ const SidebarContent: MenuItem[] = [
         external: true,
         isPro: true
       },
- {
+{
         id: uniqueId(),
         name: "School",
         icon:  GraduationCap,
@@ -832,8 +832,63 @@ const SidebarContent: MenuItem[] = [
   {
     heading: "Charts",
     items: [
-     
-      {
+      // {
+      //   name: "ApexCharts",
+      //   id: uniqueId(),
+      //   icon: PieChart,
+      //   items: [
+      //     {
+      //       id: uniqueId(),
+      //       name: "Line Chart",
+      //       url: "https://shadcndashboard.dev/charts/apex-charts/line",
+      //       external: true,
+      //       isPro: true
+      //     },
+      //     {
+      //       id: uniqueId(),
+      //       name: "Area Chart",
+      //       url: "https://shadcndashboard.dev/charts/apex-charts/area",
+      //       external: true,
+      //       isPro: true
+      //     },
+      //     {
+      //       id: uniqueId(),
+      //       name: "Gradient Chart",
+      //       url: "https://shadcndashboard.dev/charts/apex-charts/gradient",
+      //       external: true,
+      //       isPro: true
+      //     },
+      //     {
+      //       id: uniqueId(),
+      //       name: "Candlestick",
+      //       url: "https://shadcndashboard.dev/charts/apex-charts/candlestick",
+      //       external: true,
+      //       isPro: true
+      //     },
+      //     {
+      //       id: uniqueId(),
+      //       name: "Column",
+      //       url: "https://shadcndashboard.dev/charts/apex-charts/column",
+      //       external: true,
+      //       isPro: true
+      //     },
+      //     {
+      //       id: uniqueId(),
+      //       name: "Doughnut & Pie",
+      //       url: "https://shadcndashboard.dev/charts/apex-charts/doughnut",
+      //       external: true,
+      //       isPro: true
+      //     },
+      //     {
+      //       id: uniqueId(),
+      //       name: "Radialbar & Radar",
+      //       url: "https://shadcndashboard.dev/charts/apex-charts/radialbar",
+      //       external: true,
+      //       isPro: true
+      //     },
+      //   ],
+      // },
+       {
         name: "Shadcn Charts",
         id: uniqueId(),
         icon: BarChart3,
@@ -841,42 +896,42 @@ const SidebarContent: MenuItem[] = [
           {
             id: uniqueId(),
             name: "Line Chart",
-            url: "https://demos.shadcndashboard.dev/charts/shadcn/line",
+            url: "https://shadcndashboard.dev/components/line-chart",
             external: true,
             isPro: true
           },
           {
             id: uniqueId(),
             name: "Area Chart",
-            url: "https://demos.shadcndashboard.dev/charts/shadcn/area",
+            url: "https://shadcndashboard.dev/components/area-chart",
             external: true,
             isPro: true
           },
           {
             id: uniqueId(),
             name: "Radar",
-            url: "https://demos.shadcndashboard.dev/charts/shadcn/radar",
+            url: "https://shadcndashboard.dev/components/radar-chart",
             external: true,
             isPro: true
           },
           {
             id: uniqueId(),
             name: "Bar",
-            url: "https://demos.shadcndashboard.dev/charts/shadcn/bar",
+            url: "https://shadcndashboard.dev/components/bar-chart",
             external: true,
             isPro: true
           },
           {
             id: uniqueId(),
             name: "Doughnut & Pie",
-            url: "https://demos.shadcndashboard.dev/charts/shadcn/pie",
+            url: "https://shadcndashboard.dev/components/pie-chart",
             external: true,
             isPro: true
           },
           {
             id: uniqueId(),
             name: "Radialbar",
-            url: "https://demos.shadcndashboard.dev/charts/shadcn/radial",
+            url: "https://shadcndashboard.dev/components/radial-chart",
             external: true,
             isPro: true
           },

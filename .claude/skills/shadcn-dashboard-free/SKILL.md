@@ -1,7 +1,7 @@
 ---
 name: shadcn-dashboard-free
 description: |
-  Guide for building pages, features, tables, forms, mock data, and navigation in this Vite + React 19 shadcn/Radix admin dashboard SPA. Use this skill whenever the user wants to add a new page/view, wire up mock API data, build a data table, add a form, add a route, configure the sidebar, add charts, or work with this dashboard's existing conventions. Also triggers when the user asks about icon usage, theming (dark/light), or whether a listed feature (CASL, ApexCharts, drag-and-drop, AI SDK) is actually implemented. Even if the user doesn't say "dashboard" explicitly — if they're adding UI, pages, or features to this project, use this skill.
+  Guide for building pages, features, tables, forms, mock data, and navigation in this Vite + React 19 shadcn admin dashboard SPA. Use this skill whenever the user wants to add a new page/view, wire up mock API data, build a data table, add a form, add a route, configure the sidebar, add charts, or work with this dashboard's existing conventions. Also triggers when the user asks about icon usage or theming (dark/light). Even if the user doesn't say "dashboard" explicitly — if they're adding UI, pages, or features to this project, use this skill.
 ---
 
 # Shadcn Dashboard Free Development Guide
@@ -48,29 +48,20 @@ Use the wrappers in `src/components/tables/` (e.g. `DataTable.tsx`) which wrap T
 
 ## Forms
 
-Use `react-hook-form` + `zod` via `@hookform/resolvers`, following `src/components/form/index.tsx` as the reference pattern (Input/Select/Switch/Checkbox/RadioGroup/Calendar primitives from `src/components/ui/`).
+No form library is currently installed. See `src/components/form/index.tsx` for the existing reference pattern (Input/Select/Switch/Checkbox/RadioGroup/Calendar primitives from `src/components/ui/`); discuss with the user before adding a form library dependency.
 
 ## Charts
 
-Use `recharts` (see `src/components/ui/chart.tsx` and `src/components/dashboards/modern/total-sales.tsx`). **Do not use `apexcharts`/`react-apexcharts`** — they're installed in `package.json` but not wired into any view in this codebase.
+Use `recharts` (see `src/components/ui/chart.tsx` and `src/components/dashboards/modern/total-sales.tsx`).
 
 ## Icons
-
-Only two of the four icon packages listed in `package.json` are actually used in `src/`:
 
 - `lucide-react` — most common
 - `@iconify/react` (`import { Icon } from '@iconify/react'`) — used in some form/table components
 
-`@tabler/icons-react` and `react-icons` are installed but unused. Match whichever icon package the file you're editing already imports; don't introduce a new one without checking with the user.
+Match whichever icon package the file you're editing already imports.
 
-## Features That Look Implemented But Aren't
 
-These packages are in `package.json` but have no actual usage in `src/` — verify with a grep before assuming the feature exists or building on top of it:
-
-- `@casl/ability` / `@casl/react` — no CASL-based RBAC/permissions
-- `apexcharts` / `react-apexcharts` — no ApexCharts usage (recharts is the real charting lib)
-- `@dnd-kit/*`, `@hello-pangea/dnd` — no drag-and-drop UI
-- `@google/genai`, `@google/generative-ai` — no AI integration
 
 ## Code Conventions
 

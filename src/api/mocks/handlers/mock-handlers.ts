@@ -6,10 +6,7 @@ import { TicketHandlers } from 'src/api/ticket/ticket-data';
 
 
 export const mockHandlers = [
-
   ...Bloghandlers,
   ...NotesHandlers,
   ...TicketHandlers,
-
-  
 ];

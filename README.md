@@ -37,7 +37,7 @@ Shadcn Dashboard is built with React (Vite), a production-ready admin dashboard 
 - **Modern Dashboard** - Ready-to-use dashboard layout with statistics, charts, and widgets
 - **Apps** - Blog, Notes, and Tickets apps out of the box
 - **Authentication Pages** - Login, Register, Forgot Password, OTP Verification, Reset Password, Two-Factor Auth
-- **Forms & Tables** - Vertical & Horizontal form layouts, form validation, and a data table
+- **Forms & Tables** - Vertical & Horizontal form layouts and a data table
 - **User Profile** - Rich profile page with connections and activity views
 - **Built with React 19 + Vite** - Modern, fast, and SEO-friendly
 - **Tailwind CSS v4** - Easy theming and utility-based styling
@@ -112,7 +112,6 @@ Shadcn Dashboard is built with React (Vite), a production-ready admin dashboard 
 - Pages
   - User Profile
   - Form Layouts
-  - Form Validation
   - Data Table
 - Authentication
   - Login Page
@@ -127,7 +126,7 @@ Shadcn Dashboard is built with React (Vite), a production-ready admin dashboard 
   - Shadcn UI Primitives
   - Recharts
   - TipTap Rich Text Editor
-  - Data Tables (TanStack Table)
+  - Data Tables
   - Date Pickers & Calendar
   - File Dropzone
   - OTP Input
@@ -215,9 +214,6 @@ Please refer to the [CHANGELOG file](CHANGELOG.md). We add detailed release note
 
 Shadcn Dashboard is a production-ready admin dashboard kit built with React, Vite, TypeScript, Tailwind CSS v4, Shadcn UI, and Base UI. It ships with reusable UI blocks, a full component library, pre-built app pages, and authentication flows - so you can go from zero to a fully functional admin panel in minutes.
 
-- AI-ready components with built-in prompts for ChatGPT, Claude, Cursor, Lovable, Bolt, and v0
-- MCP Server support for direct editor integration (Cursor, Windsurf, VS Code, Antigravity)
-- Pre-configured auth with Supabase, Firebase, and Clerk
 - Production-ready blocks: dashboards, charts, tables, forms, and full apps
 - Built on Base UI primitives for full design control
 

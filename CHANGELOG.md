@@ -30,13 +30,9 @@ All notable changes to this project will be documented in this file.
 - User Profile page
 - Vertical Form Layout
 - Horizontal Form Layout
-- Form Validation
 - Data Table
 
 **General**
 - Dark / Light mode toggle
-- Role-Based Access Control
-- AI integration (Google Generative AI)
 - Icons showcase page
 - Responsive sidebar and header
-- Available in both Next.js and React (Vite) versions

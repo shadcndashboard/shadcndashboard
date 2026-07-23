@@ -22,8 +22,7 @@ This skill encodes the exact patterns and conventions used in this Vite + React 
 | SWR fetchers                              | `src/api/global-fetcher.ts`                             |
 | Feature state/context                       | `src/context/<feature>-context/`                       |
 | Shared types                                  | `src/types/apps/<feature>.ts`                        |
-| Custom hooks                                    | `src/hooks/`                                       |
-| i18n setup / translations                         | `src/utils/i18n.ts`, `src/utils/languages/`      |
+| Custom hooks                                    | `src/hooks/`                                       |   |
 | Tailwind/global styles                              | `src/css/`                                     |
 | Theme (dark/light) context                            | `src/context/shadcntheme/`                   |
 

@@ -6,7 +6,7 @@ This file provides essential information for AI coding agents working on this pr
 
 ## Project Overview
 
-**Shadcn Dashboard Pro** is a client-side admin dashboard SPA built with:
+**Shadcn Dashboard Free** is a client-side admin dashboard SPA built with:
 
 - **Framework**: Vite 8 + React 19 (no server framework — pure client-side SPA)
 - **Language**: TypeScript, compiled with `tsc` before every build
@@ -17,7 +17,6 @@ This file provides essential information for AI coding agents working on this pr
 - **Data fetching / mocking**: `swr` for fetching, `msw` for mocked API responses
 - **Charts**: `recharts` (the only charting library in the project)
 - **Icons**: `lucide-react` and `@iconify/react` are the two icon packages in use
-- **i18n**: `i18next` / `react-i18next`
 - **Deployment**: static `dist/` build served via Netlify redirect (`netlify.toml`) or Docker + nginx (`Dockerfile`, `nginx.conf`)
 - **Package Manager**: npm (`package-lock.json` is the lockfile of record)
 
@@ -49,12 +48,11 @@ There is no backend in this repo. All "API" calls go through mock handlers (`msw
 │   ├── tables/                  # TanStack Table wrappers (DataTable, CheckboxTable, etc.)
 │   ├── form/                    # Form field showcase/wrappers
 │   ├── icons/                    # Icon registry/data (iconify-icons.tsx)
-│   ├── animated-components/       # Framer Motion / dropzone-based components
+│   ├── animated-components/       # Motion/dropzone-based components
 │   ├── user-profile/               # Profile page components
-│   └── shared/                      # Cross-cutting shared components
+│   └── shared/                      # Cross-cutting shared components (ScrollToTop, StyleAwareWrapper, StyleDivider, dashboard-card)
 ├── context/                  # React context providers (one folder per domain)
-│   ├── blog-context/, notes-context/, ticket-context/
-│   ├── dashboard-context/, sidebar-context/, library-context/
+│   ├── blog-context/, notes-context/, ticket-context
 │   └── shadcntheme/           # Theme (dark/light) context
 ├── api/                       # Mock data + fetchers
 │   ├── global-fetcher.ts       # SWR fetcher functions (GET/POST/PUT)
@@ -65,9 +63,6 @@ There is no backend in this repo. All "API" calls go through mock handlers (`msw
 ├── hooks/                     # Custom hooks (e.g. use-mobile.ts)
 ├── lib/
 │   └── utils.ts                # cn() and shared helpers
-├── utils/
-│   ├── i18n.ts                  # i18next setup
-│   └── languages/                 # Translation files
 ├── types/                      # Shared TypeScript types (e.g. types/apps/*)
 └── css/                          # Global styles
 

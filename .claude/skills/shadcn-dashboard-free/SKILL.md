@@ -23,7 +23,6 @@ This skill encodes the exact patterns and conventions used in this Vite + React 
 | Feature state/context                       | `src/context/<feature>-context/`                       |
 | Shared types                                  | `src/types/apps/<feature>.ts`                        |
 | Custom hooks                                    | `src/hooks/`                                       |
-| i18n setup / translations                         | `src/utils/i18n.ts`, `src/utils/languages/`      |
 | Tailwind/global styles                              | `src/css/`                                     |
 | Theme (dark/light) context                            | `src/context/shadcntheme/`                   |
 

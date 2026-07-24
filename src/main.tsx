@@ -4,7 +4,6 @@ import '../src/css/globals.css';
 import App from './App.tsx';
 import Spinner from './views/spinner/Spinner.tsx';
 
-import './utils/i18n';
 import { ThemeProvider } from './context/shadcntheme/ThemeContext.tsx';
 
 async function deferRender() {

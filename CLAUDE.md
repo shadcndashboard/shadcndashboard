@@ -10,7 +10,6 @@ This is a Vite + React 19 + TypeScript admin dashboard ("shadcn-dashboard-free")
 - **Data fetching / mocking**: `swr`, `msw` (mock service worker) — see `src/api/mocks`
 - **Charts**: `recharts`
 - **Icons**: `lucide-react`, `@iconify/react`
-- **i18n**: `i18next` / `react-i18next`
 
 ## Project structure
 
@@ -21,7 +20,7 @@ This is a Vite + React 19 + TypeScript admin dashboard ("shadcn-dashboard-free")
 - `src/api` — mock data + fetchers (`global-fetcher.ts`, `mocks/handlers`)
 - `src/context` — React context providers
 - `src/hooks` — custom hooks
-- `src/lib` / `src/utils` — helpers
+- `src/lib` — helpers
 - `src/types` — shared TypeScript types
 - `src/css` — global styles
 

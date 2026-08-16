@@ -30,7 +30,6 @@
     "date-fns": "^4.3.0",
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.38.0",
-    "embla-carousel-react": "^8.6.0", 
     "motion": "^12.42.2",
     "input-otp": "^1.4.2",
     "lodash": "^4.18.1",

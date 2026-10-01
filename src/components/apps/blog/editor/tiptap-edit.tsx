@@ -13,7 +13,7 @@ import { Bold, Code, Italic, Link2, List, ListOrdered, Redo, Underline as Underl
 
 
 // Add your own styles (optional)
-import "./tiptap.css";
+import "./Tiptap.css";
 
 const MyEditor = () => {
   const [editorContent, setEditorContent] = useState("");

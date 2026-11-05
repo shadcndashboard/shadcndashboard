@@ -27,7 +27,7 @@ export function NavSecondary() {
                     </p>
                 </div>
                 {/* Upgrade button */}
-                <Link to={"https://shadcndashboard.dev/pricing"} target='_blank' className="w-full cursor-pointer h-9 flex items-center justify-center bg-foreground text-background hover:bg-foreground/90 rounded-lg text-sm font-medium">
+                <Link to={"https://shadcndashboard.dev/pricing"} prefetch="none" target='_blank' className="w-full cursor-pointer h-9 flex items-center justify-center bg-foreground text-background hover:bg-foreground/90 rounded-lg text-sm font-medium">
                     Upgrade
                 </Link>
             </div>

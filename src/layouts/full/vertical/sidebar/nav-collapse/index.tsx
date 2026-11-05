@@ -53,6 +53,7 @@ export default function NavCollapse({ menu, className }: NavCollapseProps) {
                 <Link
                   key={index}
                   to={item.url || "#"}
+                  prefetch="none"
                   target={item.external ? "_blank" : undefined}
                   className={cn(
                     "flex items-center gap-3  rounded-md transition-all duration-200 ease-in-out ",
@@ -103,6 +104,7 @@ export default function NavCollapse({ menu, className }: NavCollapseProps) {
                       <Link
                         key={index}
                         to={sub.url || "#"}
+                        prefetch="none"
                         target={sub.external ? "_blank" : undefined}
                         className={cn(
                           "block rounded-md transition-all duration-200 ease-in-out",
